@@ -1,0 +1,73 @@
+{
+  "electronVersion": "22.3.27",
+  "asar": true,
+  "productName": "Slacktron",
+  "appId": "com.alex313031.slacktron",
+  "generateUpdatesFilesForAllChannels": false,
+  "directories": {
+      "app": "app",
+      "buildResources": "build",
+      "output": "dist"
+  },
+  "files": [ "**/*" ],
+  "extraFiles": [
+    {
+      "from": "assets/icon.png"
+    },
+    {
+      "from": "assets/README.txt"
+    }
+  ],
+  "linux": {
+    "target": [
+      "zip",
+      "deb",
+      "appimage"
+    ],
+    "icon": "build/icons",
+    "maintainer": "Alex313031",
+    "vendor": "Alex313031",
+    "synopsis": "Alternative Slack Client for old OSes",
+    "category": "Network;",
+    "executableName": "slacktron",
+    "artifactName": "slacktron_${version}_${arch}.${ext}",
+    "desktop": {
+      "Name": "Slacktron",
+      "StartupWMClass": "slacktron",
+      "Keywords": "slack;messag;",
+      "Icon": "slacktron"
+    }
+  },
+  "win": {
+    "icon": "build/icon.ico",
+    "target": [
+      "zip",
+      "portable",
+      "nsis"
+    ],
+    "publisherName": "Alex313031",
+    "executableName": "slacktron",
+    "artifactName": "slacktron_${version}_${arch}.${ext}"
+  },
+  "nsis": {
+    "shortcutName": "Slacktron",
+    "artifactName": "slacktron_setup_${version}_${arch}.${ext}",
+    "uninstallDisplayName": "Slacktron ${version}",
+    "deleteAppDataOnUninstall": true,
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
+  },
+  "portable": {
+    "artifactName": "slacktron_portable_${version}_${arch}.${ext}"
+  },
+  "mac": {
+    "category": "public.app-category.entertainment",
+    "icon": "build/icon.icns",
+    "darkModeSupport": true,
+    "artifactName": "slacktron_${version}_macos_${arch}.${ext}",
+    "target": [
+      "dmg",
+      "zip"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Roboto, sans-serif;
+}
+body {
+  max-width: 80%;
+  margin: auto;
+  color: #fff;
+  background-color: #1A1D21;
+  border: 1px solid #fff;
+}
+h2 {
+  text-shadow: 1px 1px 1px #000;
+}
+a:link {
+  color: #5bf5bf;
+}
+a:active,
+a:visited {
+  color: #ae5ee0;
+}

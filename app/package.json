@@ -1,0 +1,32 @@
+{
+  "name": "slack-electron",
+  "appName": "Slacktron",
+  "applicationId": "com.alex313031.slacktron",
+  "version": "0.0.1",
+  "description": "Slack Client for old OSes.",
+  "author": "Alex313031",
+  "license": "BSD-3-Clause",
+  "repository": "https://github.com/Alex313031/slack-electron",
+  "main": "./main.js",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "test": "echo \"Error: No test specified\" && exit 1",
+    "clean": "rimraf node_modules",
+    "burn": "rimraf package-lock.json",
+    "start": "electron .",
+    "winstart": "electron ."
+  },
+  "dependencies": {
+    "@electron/remote": "2.1.2",
+    "electron-context-menu": "3.6.1",
+    "electron-log": "5.2.3",
+    "electron-store": "8.2.0"
+  },
+  "devDependencies": {
+    "asar": "3.2.0",
+    "electron": "22.3.27",
+    "rimraf": "3.0.2"
+  }
+}
