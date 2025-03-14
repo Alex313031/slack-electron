@@ -2,7 +2,7 @@
   "name": "slack-electron",
   "appName": "Slacktron",
   "applicationId": "com.alex313031.slacktron",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Slack Client for old OSes.",
   "author": "Alex313031",
   "license": "BSD-3-Clause",
